@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config()   //it is env which kepts the secret info like database it doesnt show it to the users
 
 const express = require('express');
 
@@ -35,6 +35,6 @@ app.get('/getData',(req,res) => {
     res.json(myData);
 })
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT,()=>{              //note the way of using the port
     console.log(`I am Listening on ${port}`)
 })
